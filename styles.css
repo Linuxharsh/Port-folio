@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 75px;
+  text-overflow: blue;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-link li a:hover {
+  color: #ff6347;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.About, .Projects, .Contact {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: #333;
+  border-radius: 8px;
+}
+
+.project-card {
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: #0097a7;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff6347;
+  color: white;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #111;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-link {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  .nav-link.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
